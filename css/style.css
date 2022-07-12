@@ -1,0 +1,203 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+.container {
+    max-width: 930px;
+    margin: 0 auto;
+    padding: 0 15px;
+    font-family: 'Segoe UI';
+}
+
+.header {
+    background-color: #23232e;
+
+}
+
+.header .container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 15px 80px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.header .logo {
+    width: unset;
+    height: 84px;
+    margin-bottom: 93px;
+}
+
+.header span {
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+
+
+}
+
+.header p {
+    font-size: 18px;
+    color: #ffff;
+    text-align: center;
+    line-height: 30px;
+}
+
+.header .icon-arrow {
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%);
+    display: flex;
+    background-image: url('../img/icon-arrow.png');
+    width: 48px;
+    height: 48px;
+}
+
+main {
+    background-image: url(../img/background-main.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+main .container {
+    padding: 62px 15px 60px;
+}
+
+.about {
+    margin-bottom: 60px;
+}
+
+.about p {
+    max-width: 860px;
+    font-size: 20px;
+    line-height: 1.4;
+    color: #464b4f;
+    text-align: center;
+}
+
+.about p:not(:last-child) {
+    margin-bottom: 26px;
+}
+
+
+.services h2 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #464b4f;
+    margin-bottom: 50px;
+
+}
+
+.services ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.services ul li {
+    max-width: 500px;
+    /* min-width: 33%; */
+}
+
+.services ul li:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.services ul li h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 42px;
+    color: #464b4f;
+    margin-bottom: 15px;
+}
+
+.services ul li p {
+    font-size: 14px;
+    color: #888a8b;
+    line-height: 1.8;
+}
+
+@media only screen and (min-width: 930px) {
+    .header .container {
+        padding: 80px 15px 100px;
+    }
+
+    .header .logo {
+        width: 167px;
+        height: 168px;
+        margin-bottom: 186px;
+    }
+
+    .header span {
+        font-size: 80px;
+        margin-bottom: 62px;
+    }
+
+    .header p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .about {
+        margin-bottom: 120px;
+    }
+
+    .about p {
+        font-size: 30px;
+    }
+
+    .services h2 {
+        font-size: 80px;
+        margin-bottom: 100px;
+
+    }
+
+    .services ul {
+        flex-direction: row;
+
+    }
+
+    .services ul li {
+        min-width: 35%;
+        margin-right: 10px;
+
+    }
+
+    .services ul li:not(:last-child) {
+        margin-right: 35px;
+    }
+
+    .services ul li h3 {
+
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .services ul li p {
+        font-size: 18 px;
+    }
+
+
+}
