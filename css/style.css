@@ -1,6 +1,7 @@
 * {
     scroll-behavior: smooth;
     box-sizing: border-box;
+    box-shadow: #23232e;
     line-height: 1;
 }
 
@@ -187,6 +188,10 @@ main .container {
 
     .services ul li:not(:last-child) {
         margin-right: 35px;
+    }
+
+    .services ul li:not(:last-child) {
+        margin-bottom: 0px;
     }
 
     .services ul li h3 {
